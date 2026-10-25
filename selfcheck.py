@@ -49,6 +49,36 @@ warns: list[str] = []
 n_checks = 0
 
 
+
+def _load_gitignore() -> list[str]:
+    """★ 读 .gitignore（★ 只支持最常见的几类：★ 目录名 ★ / *.ext ★ / 字面路径 ★）★"""
+    gi = os.path.join(ROOT, ".gitignore")
+    if not os.path.exists(gi):
+        return []
+    out = []
+    for ln in open(gi, encoding="utf-8").read().splitlines():
+        ln = ln.strip()
+        if not ln or ln.startswith("#"):
+            continue
+        out.append(ln)
+    return out
+
+
+def _gitignore_match(pats: list[str], rel: str) -> bool:
+    """★ 极简 .gitignore 匹配（★ 够本仓用 ★）★"""
+    import fnmatch
+    for pat in pats:
+        p = pat.rstrip("/")
+        if fnmatch.fnmatch(rel, p) or fnmatch.fnmatch(os.path.basename(rel), p):
+            return True
+        if rel.startswith(p + "/") or ("/" + p + "/") in ("/" + rel + "/"):
+            return True
+        # 目录模式：★ 任意层级下同名目录都要排除 ★
+        if p and ("/%s/" % p) in ("/" + rel + "/"):
+            return True
+    return False
+
+
 def sha256_file(p: str) -> str:
     h = hashlib.sha256()
     with open(p, "rb") as f:
@@ -115,11 +145,20 @@ def check_manifest() -> None:
     if _git is not None:
         actual = {x for x in _git if x != "SHA256SUMS.txt"}
     else:
+        # ★★ 无 git 时（★ 例如【交付包解压后】★）★ 退回文件系统遍历 ⇒
+        # ★ ★ 必须仍认 .gitignore ★ ⇒ 否则【脚本自己运行时产生的产物 JSON】
+        # ★   会被算成"仓里有但清单没列" ⇒ ★ 读者解压后一跑就红 ⇒ ★ 假红 ★
+        _ign = _load_gitignore()
         for dirpath, dirnames, filenames in os.walk(ROOT):
-            dirnames[:] = [d for d in dirnames if d not in (".git", "__pycache__")]
+            dirnames[:] = [d for d in dirnames
+                           if d not in (".git", "__pycache__")
+                           and not _gitignore_match(_ign, os.path.relpath(
+                               os.path.join(dirpath, d), ROOT).replace(os.sep, "/") + "/")]
             for fn in filenames:
                 rel = os.path.relpath(os.path.join(dirpath, fn), ROOT).replace(os.sep, "/")
                 if rel == "SHA256SUMS.txt" or rel.endswith(".pyc"):
+                    continue
+                if _gitignore_match(_ign, rel):
                     continue
                 actual.add(rel)
 
