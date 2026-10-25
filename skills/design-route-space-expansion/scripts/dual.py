@@ -10,6 +10,9 @@
 规格、认知框架、persona 全部放在 prompts.py，与代码分离，
 这样 leakage.py 能只扫「真正发给模型的字符串」。
 """
+# ★ 2026-10-25：★ 缺实验包时给【可执行提示】（★ 而不是裸 ModuleNotFoundError ★）
+import _deps  # noqa: E402
+_deps.require("dual")
 from creativity_lab.arms.base import ArmResult
 from creativity_lab.client import MODELS
 from creativity_lab.prompts import (FRAMES, PERSONAS, OUT_SPEC, PREMISE_Q,

@@ -23,6 +23,9 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# ★ 2026-10-25：★ 缺实验包时给【可执行提示】（★ 而不是裸 ModuleNotFoundError ★）
+import _deps  # noqa: E402
+_deps.require("adhd_repro")
 from creativity_lab.client import LLM   # noqa: E402
 
 # ---------------------------------------------------------------- 帧（src/packs/core.ts 原样搬）

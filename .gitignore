@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+# ★ 自检脚本产出的【中间结果】（★ 每次跑都会重写 ⇒ 不进仓、★ 不进清单 ★）
+skills/learning-route-generalization/scripts/condition_clause_report.json
+skills/learning-route-generalization/scripts/family_recompute.json
+skills/learning-route-generalization/scripts/nested_calib_self.json

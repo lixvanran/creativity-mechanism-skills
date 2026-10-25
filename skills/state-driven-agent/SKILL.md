@@ -72,5 +72,5 @@ st = rollback(st, reason="证据反证")
 
 ## 参考
 
-`scripts/`：`state_layer.py`（内核）、`apply_state_layer_rev3.py`（接入 agent 循环）、`test_state_layer.py` + `test_state_layer_rev3_mutations.py`（★ 含变异注入测试）、`probe_select_boundary.py`、`probe_state_layer_spec_gap.py`、`check_independent_samples.py`
+`scripts/`：`state_layer.py`（内核）、`apply_state_layer_rev3.py`（接入 agent 循环）、`test_state_layer.py`（★ 规格测试 8 项 ★ **且自带变异注入** ⇒ `python3 skills/state-driven-agent/scripts/test_state_layer.py --self-test` ★ ⇒ ★ 14 个变异逐个【必须如期失败】★ ⇒ ★ 这一条就是「证明测试不是空转」★）、`probe_select_boundary.py`、`probe_state_layer_spec_gap.py`、`check_independent_samples.py`
 `references/`：`ADHD-trait-to-agent.md`（ADHD 特质→Agent 实现路径）、`experiment-report-4q.md`

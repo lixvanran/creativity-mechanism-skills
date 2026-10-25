@@ -13,7 +13,21 @@ import sys
 
 os.environ["OPENROUTER_BASE_URL"] = "https://api.minimaxi.com/v1"
 sys.path.insert(0, os.environ.get("G4_REF_DIR", "/workspace/g4_ref"))
-from creativity_lab.gates.base import Select   # noqa: E402
+# ★★ 2026-10-25：★ 缺依赖时给【可执行提示】（★ 而不是裸 ModuleNotFoundError ★）★★
+# ★ `creativity_lab.gates`（★ 三组的判官选择门 ★）**未随本仓发布** ⇒ ★ 读者 clone 下来
+# ★ 直接跑这个探针会撞裸 ModuleNotFoundError ⇒ ★ 不知道缺的是哪一块、该怎么补 ★
+try:
+    from creativity_lab.gates.base import Select   # noqa: E402
+except ImportError as _e:
+    raise ImportError(
+        "\n✘ 缺少 `creativity_lab.gates`（★ 三组的【判官选择门】★）\n"
+        "★ 本仓的 creativity_lab 只有 state_layer / unit_store / apply_state_layer_rev3\n"
+        "★   ⇒ ★ gates（★ Select 的选择/预算门 ★）**未随本仓发布** ★\n"
+        "★ 怎么补：★ 从三组的仓取 creativity_lab/gates/，★ 放到本仓\n"
+        "★   skills/state-driven-agent/scripts/creativity_lab/ 下（★ 或设 PYTHONPATH ★）\n"
+        "★ 注意：★ 本仓的 state-driven-agent 内核与该探针【是两条线】★\n"
+        "★   （★ 内核测试 8/8 全过、★ 变异注入 14/14 全过、★ 都不需要 gates ★）\n"
+        "★ 原始错误：%s" % (_e,)) from _e
 
 
 def main() -> int:

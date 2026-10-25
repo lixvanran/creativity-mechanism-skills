@@ -39,6 +39,9 @@ sys.path.insert(0, os.path.join(HERE, "armdeps"))
 
 import client2 as C                       # noqa: E402
 import arm3                              # noqa: E402
+# ★ 2026-10-25：★ 缺实验包时给【可执行提示】（★ 而不是裸 ModuleNotFoundError ★）
+import _deps  # noqa: E402
+_deps.require("run_compare5")
 from creativity_lab.learnarch import run_episode  # noqa: E402
 from creativity_lab.client import LLM     # noqa: E402
 

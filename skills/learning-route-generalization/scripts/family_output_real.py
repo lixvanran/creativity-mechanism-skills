@@ -11,8 +11,23 @@ import sys
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, "/workspace/lab/routes/C")
-from optimizer import family_key  # noqa: E402  （族键口径 = 层2 可复用的那一套）
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+# ★★ 2026-10-25 修一个【读者必然跑不起来】★★
+# ★ 事件：★ 旧写法 `sys.path.insert(0, "/workspace/lab/routes/C")` ⇒ ★ 硬编码了
+# ★   【作者自己机器上的绝对路径】⇒ ★ 任何读者 clone 下来 ⇒ 路径不存在 ⇒
+# ★   ⇒ import 失败 ⇒ ModuleNotFoundError: No module named 'optimizer' ★
+# ⇒ ★ 落法：★ 优先用【本仓的同口径实现】★（★ family_recompute.family_key 的注释写明
+# ★   与 routes/C/optimizer.py:75 同口径 ★；★ 逐字比对：★ 本仓是
+# ★   "|".join(sorted(card.get("supports_conclusions") or [])) ★
+# ★   optimizer.py:75 是 "|".join(sorted(card['supports_conclusions'])) ★
+# ★   ⇒ ★★ 唯一差别是【None 安全】与【.get vs []】★ ⇒ 对格式正确的卡片【完全等价】★★
+# ★   ⇒ ★ 且原路径若仍在（作者机器上）⇒ 仍可用它 ★
+try:
+    from family_recompute import family_key  # noqa: E402
+except ImportError:  # ★ 本仓实现不在 ⇒ 退回原路径 ★
+    sys.path.insert(0, "/workspace/lab/routes/C")
+    from optimizer import family_key  # noqa: E402
 
 RUNS = [("main_big", os.path.join(HERE, "runs", "main_big", "arms.jsonl")),
         ("adv", os.path.join(HERE, "runs", "adv", "arms.jsonl")),

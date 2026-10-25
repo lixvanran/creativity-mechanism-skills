@@ -3,7 +3,7 @@
 > ★ **接口归属：第二组。** ★ **本文件是【规格的可执行形态】** ⇒ ⇒
 > ★ **改规则 ⇒ ⇒ 测试必须失败**（★ 否则测试是假绿）。
 >
-> ★ **运行**：`python3 -B creativity_lab/experiments/test_state_layer.py`（★ **exit 0 = 全过**）｜★ **零 API**
+> ★ **运行**：★ `python3 scripts/test_state_layer.py`（★ 本仓布局 ★）或 `python3 scripts/creativity_lab/test_state_layer.py`（★ 两份逐字节一致 ★）（★ **exit 0 = 全过**）｜★ **零 API**
 > ★ **自检**：`python3 -B creativity_lab/experiments/test_state_layer.py --self-test`
 >   ⇒ ★ **对规则注入变异 ⇒ ⇒ 断言【对应的那一项测试】必须失败** ⇒ ⇒ 证明每个测试项都是活的。
 >
@@ -39,14 +39,41 @@ import os
 import sys
 import tempfile
 
-# ★ 把仓库根放进 sys.path ⇒ ⇒ 直接 `python3 -B creativity_lab/experiments/test_state_layer.py`
-# ★ 也能 import 到 `creativity_lab`（★ 否则 sys.path[0] 是本目录 ⇒ import 会失败）
+# ★ 把【含 creativity_lab/ 的那一层】放进 sys.path ⇒ ⇒ import 得到 creativity_lab
+# ★ （★ 否则 sys.path[0] 是本目录 ⇒ import 会失败 ★）
+#
+# ★★ 2026-10-25 修一个【发布布局与路径假设不一致】★★
+# ★ 事件：★ 本文件被发布到 `skills/state-driven-agent/scripts/test_state_layer.py`，
+# ★   而 `creativity_lab/` 与它【平级】（在 scripts/ 下）⇒ ★ 但旧写法假设自己在
+# ★   `creativity_lab/experiments/` 下 ⇒ ★ _ROOT 上溯了两层 ⇒ ★ 落到 `skills/` ⇒
+# ★   ⇒ STATE_LAYER_PATH 指向不存在的路径 ⇒ ★ **15 个变异全部构造失败** ⇒
+# ★   ⇒ ★ 也就是说：★ README/SKILL.md 宣传的「★ 变异注入证明测试不是空转 ★」
+# ★   在【发布后的布局】下【根本没跑过】★★ ⇒ ★ 一个自称的能力其实是坏的 ★
+# ⇒ ★ 落法：★ 【按目录内容找根】★ ⇒ 不再依赖「本文件在第几层」★★
 _HERE = os.path.dirname(os.path.abspath(__file__))
-_ROOT = os.path.dirname(os.path.dirname(_HERE))
+
+
+def _find_root():
+    """★ 找到【真的含 creativity_lab/】的那一层（★ 与文件被放在第几层无关 ★）"""
+    for cand in (_HERE,
+                 os.path.dirname(_HERE),
+                 os.path.dirname(os.path.dirname(_HERE))):
+        if os.path.isdir(os.path.join(cand, "creativity_lab")):
+            return cand
+    return os.path.dirname(os.path.dirname(_HERE))
+
+
+_ROOT = _find_root()
 if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
 STATE_LAYER_PATH = os.path.join(_ROOT, "creativity_lab", "state_layer.py")
+if not os.path.exists(STATE_LAYER_PATH):
+    # ★ 路径找不到 ⇒ 【响亮失败】★ ⇒ ★ 不许静默跳过变异（★ 静默跳过 = 假绿 ★）
+    print("✘ 找不到状态层实现：%s" % STATE_LAYER_PATH)
+    print("  ★ _ROOT = %s" % _ROOT)
+    print("  ★ ⇒ 【响亮失败】★（★ 静默跳过变异注入 = 假绿 ★）")
+    sys.exit(2)
 
 
 # ══════════════════════════════════════════════════════════════
@@ -604,9 +631,17 @@ def self_test():
     """★ **变异注入自检** ⇒ ⇒ 每个测试项都必须证明【自己抓得住东西】"""
     print("=== ★ 变异注入自检（★ 证明测试是活的，不是假绿）===")
     ok_all = True
+    # ★★ 2026-10-25 修一个【恒真计数】★★
+    # ★ 事件：★ 原来打印的是 len(MUTATIONS)（★ 一个【常量】★）⇒ ★ 循环被清空、
+    # ★   或变异清单被截断时 ⇒ ★ 依然打印「14/14 项全部如期失败」⇒ ★ **假绿** ★
+    # ⇒ ★ 落法：★ 计数用【实数】★（★ n_run = 真正跑了的、★ n_failed = 如期失败的 ★）
+    #   ⇒ ★ 打印 n_failed/n_run ⇒ ★ 空跑 ⇒ 打印 0/0 ⇒ ★ 必然被外部看穿 ★
+    n_run = 0
+    n_failed = 0
     tmpdir = tempfile.mkdtemp(prefix="state_layer_mut_")
     try:
         for mut_name, old, new, target_test, why in MUTATIONS:
+            n_run += 1
             try:
                 mod = _load_mutant(tmpdir, mut_name, old, new)
             except Exception as e:
@@ -624,12 +659,19 @@ def self_test():
                       % (mut_name, target_test, why))
                 ok_all = False
             else:
+                n_failed += 1
                 print("  ✔ %-24s ⇒ %s 如期失败：%s" % (mut_name, target_test, msg[:110]))
     finally:
         import shutil
         shutil.rmtree(tmpdir, ignore_errors=True)
-    if ok_all:
-        print("=== ★ 变异注入自检：%d/%d 项全部如期失败 ⇒ 测试是活的 ===" % (len(MUTATIONS), len(MUTATIONS)))
+    if n_run != len(MUTATIONS):
+        print("  ✘ ★ 实际执行的变异数 %d ≠ 变异清单声明的 %d ⇒ 清单被截断"
+              % (n_run, len(MUTATIONS)))
+        ok_all = False
+    if n_run == 0:
+        print("  ✘ ★ 一个变异都没跑 ⇒ 这个自检是空的（★ 恒真检查项 ★）")
+        ok_all = False
+    print("=== ★ 变异注入自检：%d/%d 项全部如期失败 ⇒ 测试是活的 ===" % (n_failed, n_run))
     return 0 if ok_all else 1
 
 
