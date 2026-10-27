@@ -1,0 +1,2091 @@
+{
+  "health": {
+    "MAP": {
+      "n": 21,
+      "ok": 21,
+      "trunc": 0,
+      "fail": 0,
+      "parse_err": 0
+    },
+    "GEN": {
+      "n": 279,
+      "ok": 153,
+      "trunc": 0,
+      "fail": 126,
+      "parse_err": 0
+    },
+    "AUD": {
+      "n": 141,
+      "ok": 141,
+      "trunc": 0,
+      "fail": 0,
+      "parse_err": 0
+    },
+    "SKL": {
+      "n": 153,
+      "ok": 153,
+      "trunc": 0,
+      "fail": 0,
+      "parse_err": 0
+    }
+  },
+  "rows": [
+    {
+      "arm": "A0",
+      "topic": "T1",
+      "rep": 0,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 686,
+      "mean_unit_chars": 686.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T1",
+      "rep": 1,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 668,
+      "mean_unit_chars": 668.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T1",
+      "rep": 2,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 524,
+      "mean_unit_chars": 524.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T2",
+      "rep": 0,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 651,
+      "mean_unit_chars": 651.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T2",
+      "rep": 1,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 1,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 533,
+      "mean_unit_chars": 533.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T2",
+      "rep": 2,
+      "n_units": 1,
+      "cov": 2,
+      "cov250": 1,
+      "cov3": 2,
+      "cov_per_unit": 2.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 572,
+      "mean_unit_chars": 572.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T3",
+      "rep": 0,
+      "n_units": 1,
+      "cov": 1,
+      "cov250": 0,
+      "cov3": 1,
+      "cov_per_unit": 1.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 604,
+      "mean_unit_chars": 604.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T3",
+      "rep": 1,
+      "n_units": 1,
+      "cov": 1,
+      "cov250": 0,
+      "cov3": 1,
+      "cov_per_unit": 1.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 562,
+      "mean_unit_chars": 562.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T3",
+      "rep": 2,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 583,
+      "mean_unit_chars": 583.0,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A0",
+      "topic": "T7",
+      "rep": 0,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 418,
+      "mean_unit_chars": 418.0,
+      "modality_n3": 1
+    },
+    {
+      "arm": "A0",
+      "topic": "T7",
+      "rep": 1,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 369,
+      "mean_unit_chars": 369.0,
+      "modality_n3": 1
+    },
+    {
+      "arm": "A0",
+      "topic": "T7",
+      "rep": 2,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": null,
+      "n_audit": 0,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 520,
+      "mean_unit_chars": 520.0,
+      "modality_n3": 1
+    },
+    {
+      "arm": "A3c",
+      "topic": "T1",
+      "rep": 0,
+      "n_units": 5,
+      "cov": 4,
+      "cov250": 1,
+      "cov3": 3,
+      "cov_per_unit": 1.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.910742670021073,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 4.8,
+      "on_topic": 1.0,
+      "neg_rate": 0.3610108303249097,
+      "chars": 3072,
+      "mean_unit_chars": 614.4,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T1",
+      "rep": 1,
+      "n_units": 5,
+      "cov": 3,
+      "cov250": 3,
+      "cov3": 2,
+      "cov_per_unit": 0.6,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9008733903786943,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 4.8,
+      "on_topic": 1.0,
+      "neg_rate": 0.2894356005788712,
+      "chars": 3067,
+      "mean_unit_chars": 613.4,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T1",
+      "rep": 2,
+      "n_units": 5,
+      "cov": 3,
+      "cov250": 3,
+      "cov3": 2,
+      "cov_per_unit": 0.8,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9097357571610034,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 4.8,
+      "on_topic": 1.0,
+      "neg_rate": 0.6814310051107325,
+      "chars": 3034,
+      "mean_unit_chars": 606.8,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T2",
+      "rep": 0,
+      "n_units": 5,
+      "cov": 2,
+      "cov250": 2,
+      "cov3": 1,
+      "cov_per_unit": 0.4,
+      "skel_dist": 1.0,
+      "cos_dist": 0.903603398468733,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2771,
+      "mean_unit_chars": 554.2,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T2",
+      "rep": 1,
+      "n_units": 5,
+      "cov": 1,
+      "cov250": 2,
+      "cov3": 1,
+      "cov_per_unit": 0.4,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8960152956114402,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2833,
+      "mean_unit_chars": 566.6,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T2",
+      "rep": 2,
+      "n_units": 5,
+      "cov": 2,
+      "cov250": 2,
+      "cov3": 1,
+      "cov_per_unit": 0.4,
+      "skel_dist": 1.0,
+      "cos_dist": 0.89559094096218,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2717,
+      "mean_unit_chars": 543.4,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T3",
+      "rep": 0,
+      "n_units": 5,
+      "cov": 3,
+      "cov250": 1,
+      "cov3": 2,
+      "cov_per_unit": 0.8,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9088835406285796,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 3284,
+      "mean_unit_chars": 656.8,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T3",
+      "rep": 1,
+      "n_units": 5,
+      "cov": 4,
+      "cov250": 3,
+      "cov3": 3,
+      "cov_per_unit": 1.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.909685015129679,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 3064,
+      "mean_unit_chars": 612.8,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T3",
+      "rep": 2,
+      "n_units": 5,
+      "cov": 2,
+      "cov250": 1,
+      "cov3": 0,
+      "cov_per_unit": 0.4,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9112457250272484,
+      "fulfill": 1.0,
+      "n_audit": 5,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2826,
+      "mean_unit_chars": 565.2,
+      "modality_n3": 2
+    },
+    {
+      "arm": "A3c",
+      "topic": "T7",
+      "rep": 0,
+      "n_units": 1,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 1.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": 1.0,
+      "n_audit": 1,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 514,
+      "mean_unit_chars": 514.0,
+      "modality_n3": 1
+    },
+    {
+      "arm": "A3c",
+      "topic": "T7",
+      "rep": 1,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": 1.0,
+      "n_audit": 1,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 489,
+      "mean_unit_chars": 489.0,
+      "modality_n3": 1
+    },
+    {
+      "arm": "A3c",
+      "topic": "T7",
+      "rep": 2,
+      "n_units": 1,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": NaN,
+      "cos_dist": NaN,
+      "fulfill": 1.0,
+      "n_audit": 1,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 653,
+      "mean_unit_chars": 653.0,
+      "modality_n3": 1
+    },
+    {
+      "arm": "A4b",
+      "topic": "T1",
+      "rep": 0,
+      "n_units": 4,
+      "cov": 2,
+      "cov250": 2,
+      "cov3": 2,
+      "cov_per_unit": 0.5,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9176338882825451,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2225,
+      "mean_unit_chars": 556.25
+    },
+    {
+      "arm": "A4b",
+      "topic": "T1",
+      "rep": 1,
+      "n_units": 4,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.5,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8941733002854909,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2308,
+      "mean_unit_chars": 577.0
+    },
+    {
+      "arm": "A4b",
+      "topic": "T1",
+      "rep": 2,
+      "n_units": 4,
+      "cov": 1,
+      "cov250": 0,
+      "cov3": 1,
+      "cov_per_unit": 0.25,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8918528900257806,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.75,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2460,
+      "mean_unit_chars": 615.0
+    },
+    {
+      "arm": "A4b",
+      "topic": "T2",
+      "rep": 0,
+      "n_units": 4,
+      "cov": 2,
+      "cov250": 2,
+      "cov3": 2,
+      "cov_per_unit": 0.5,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8955954183142995,
+      "fulfill": 0.75,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.25,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2096,
+      "mean_unit_chars": 524.0
+    },
+    {
+      "arm": "A4b",
+      "topic": "T2",
+      "rep": 1,
+      "n_units": 4,
+      "cov": 1,
+      "cov250": 0,
+      "cov3": 1,
+      "cov_per_unit": 0.25,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9232034346258061,
+      "fulfill": 0.5,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2160,
+      "mean_unit_chars": 540.0
+    },
+    {
+      "arm": "A4b",
+      "topic": "T2",
+      "rep": 2,
+      "n_units": 4,
+      "cov": 2,
+      "cov250": 2,
+      "cov3": 2,
+      "cov_per_unit": 0.75,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9146364509228767,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2285,
+      "mean_unit_chars": 571.25
+    },
+    {
+      "arm": "A4b",
+      "topic": "T3",
+      "rep": 0,
+      "n_units": 4,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9210414510319925,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2157,
+      "mean_unit_chars": 539.25
+    },
+    {
+      "arm": "A4b",
+      "topic": "T3",
+      "rep": 1,
+      "n_units": 4,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9118187844114923,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2302,
+      "mean_unit_chars": 575.5
+    },
+    {
+      "arm": "A4b",
+      "topic": "T3",
+      "rep": 2,
+      "n_units": 4,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9178009907101021,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2102,
+      "mean_unit_chars": 525.5
+    },
+    {
+      "arm": "A4b",
+      "topic": "T7",
+      "rep": 0,
+      "n_units": 4,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 0.9416666666666668,
+      "cos_dist": 0.5879832995033724,
+      "fulfill": 0.75,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2396,
+      "mean_unit_chars": 599.0
+    },
+    {
+      "arm": "A4b",
+      "topic": "T7",
+      "rep": 1,
+      "n_units": 4,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.25,
+      "skel_dist": 0.9583333333333334,
+      "cos_dist": 0.5914796562574867,
+      "fulfill": 0.75,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2376,
+      "mean_unit_chars": 594.0
+    },
+    {
+      "arm": "A4b",
+      "topic": "T7",
+      "rep": 2,
+      "n_units": 4,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.482930745135482,
+      "fulfill": 0.75,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.75,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2302,
+      "mean_unit_chars": 575.5
+    },
+    {
+      "arm": "A5",
+      "topic": "T1",
+      "rep": 0,
+      "n_units": 4,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.25,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8474807206308405,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.75,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2471,
+      "mean_unit_chars": 617.75
+    },
+    {
+      "arm": "A5",
+      "topic": "T1",
+      "rep": 1,
+      "n_units": 4,
+      "cov": 2,
+      "cov250": 1,
+      "cov3": 2,
+      "cov_per_unit": 0.5,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9028252627475702,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2335,
+      "mean_unit_chars": 583.75
+    },
+    {
+      "arm": "A5",
+      "topic": "T1",
+      "rep": 2,
+      "n_units": 4,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9114704795146106,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2304,
+      "mean_unit_chars": 576.0
+    },
+    {
+      "arm": "A5",
+      "topic": "T2",
+      "rep": 0,
+      "n_units": 4,
+      "cov": 2,
+      "cov250": 2,
+      "cov3": 2,
+      "cov_per_unit": 0.75,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8941853080120362,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.75,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 1993,
+      "mean_unit_chars": 498.25
+    },
+    {
+      "arm": "A5",
+      "topic": "T2",
+      "rep": 1,
+      "n_units": 4,
+      "cov": 2,
+      "cov250": 2,
+      "cov3": 2,
+      "cov_per_unit": 0.75,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9008114109467357,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.25,
+      "on_topic": 1.0,
+      "neg_rate": 0.41118421052631576,
+      "chars": 2130,
+      "mean_unit_chars": 532.5
+    },
+    {
+      "arm": "A5",
+      "topic": "T2",
+      "rep": 2,
+      "n_units": 4,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.25,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9169270238174988,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 4.25,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2156,
+      "mean_unit_chars": 539.0
+    },
+    {
+      "arm": "A5",
+      "topic": "T3",
+      "rep": 0,
+      "n_units": 4,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.25,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8939544874552298,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.4244482173174873,
+      "chars": 2662,
+      "mean_unit_chars": 665.5
+    },
+    {
+      "arm": "A5",
+      "topic": "T3",
+      "rep": 1,
+      "n_units": 4,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9084464811700016,
+      "fulfill": 1.0,
+      "n_audit": 4,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 2757,
+      "mean_unit_chars": 689.25
+    },
+    {
+      "arm": "A5",
+      "topic": "T3",
+      "rep": 2,
+      "n_units": 2,
+      "cov": 1,
+      "cov250": 0,
+      "cov3": 1,
+      "cov_per_unit": 0.5,
+      "skel_dist": 1.0,
+      "cos_dist": 0.8116132971316712,
+      "fulfill": 1.0,
+      "n_audit": 2,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 1241,
+      "mean_unit_chars": 620.5
+    },
+    {
+      "arm": "A5",
+      "topic": "T6",
+      "rep": 2,
+      "n_units": 2,
+      "cov": 0,
+      "cov250": 0,
+      "cov3": 0,
+      "cov_per_unit": 0.0,
+      "skel_dist": 1.0,
+      "cos_dist": 0.9451158334677623,
+      "fulfill": 1.0,
+      "n_audit": 2,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 1253,
+      "mean_unit_chars": 626.5
+    },
+    {
+      "arm": "A5",
+      "topic": "T7",
+      "rep": 0,
+      "n_units": 3,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.6666666666666666,
+      "skel_dist": 1.0,
+      "cos_dist": 0.6566397128849668,
+      "fulfill": 1.0,
+      "n_audit": 3,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 1486,
+      "mean_unit_chars": 495.3333333333333
+    },
+    {
+      "arm": "A5",
+      "topic": "T7",
+      "rep": 1,
+      "n_units": 3,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.3333333333333333,
+      "skel_dist": 0.826058201058201,
+      "cos_dist": 0.31685992660229995,
+      "fulfill": 1.0,
+      "n_audit": 3,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 1899,
+      "mean_unit_chars": 633.0
+    },
+    {
+      "arm": "A5",
+      "topic": "T7",
+      "rep": 2,
+      "n_units": 3,
+      "cov": 1,
+      "cov250": 1,
+      "cov3": 1,
+      "cov_per_unit": 0.3333333333333333,
+      "skel_dist": 1.0,
+      "cos_dist": 0.5015564932157973,
+      "fulfill": 1.0,
+      "n_audit": 3,
+      "vague_rate": 0.0,
+      "actionable": 5.0,
+      "on_topic": 1.0,
+      "neg_rate": 0.0,
+      "chars": 1680,
+      "mean_unit_chars": 560.0
+    }
+  ],
+  "verdicts": {
+    "P1": {
+      "metric": "skel_dist",
+      "A": "A3",
+      "B": "A1",
+      "desc": "TSC 的机制骨架比身份臂更分散",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "P2": {
+      "metric": "fulfill",
+      "A": "A3",
+      "B": "A1",
+      "desc": "TSC 的兑现率高于身份臂",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "P3": {
+      "metric": "skel_dist",
+      "A": "A3",
+      "B": "A2",
+      "desc": "TSC 比单提示多视角更分散",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "P4": {
+      "metric": "skel_dist",
+      "A": "A3",
+      "B": "A0",
+      "desc": "TSC 比基线更分散",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "P5": {
+      "metric": "cov",
+      "A": "A3",
+      "B": "A3c",
+      "desc": "自测绘分支的覆盖不比外部给定轴差",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "P6": {
+      "metric": "skel_dist",
+      "A": "A3",
+      "B": "A4",
+      "desc": "H0：任务相关路径选择优于任务无关维度",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "P7": {
+      "metric": "skel_dist",
+      "A": "A3",
+      "B": "A0",
+      "desc": "负对照：路径唯一题上 TSC 不应展宽",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T7",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S1": {
+      "metric": "cov",
+      "A": "A3",
+      "B": "A1",
+      "desc": "次指标：TSC 自测绘 vs 身份臂（轴覆盖）",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S2": {
+      "metric": "cov3",
+      "A": "A3",
+      "B": "A1",
+      "desc": "次指标·同 n 配平：TSC 自测绘 vs 身份臂",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S3": {
+      "metric": "cov3",
+      "A": "A3",
+      "B": "A2",
+      "desc": "次指标·同 n 配平：TSC 自测绘 vs 单提示多视角",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S4": {
+      "metric": "cov3",
+      "A": "A3",
+      "B": "A0",
+      "desc": "次指标·同 n 配平：TSC 自测绘 vs 基线",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S5": {
+      "metric": "cov3",
+      "A": "A3",
+      "B": "A4",
+      "desc": "次指标·同 n 配平：H0 杀手——TSC vs 任务无关维度",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S6": {
+      "metric": "cov3",
+      "A": "A1",
+      "B": "A0",
+      "desc": "次指标·同 n 配平：身份臂 vs 基线",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S7": {
+      "metric": "cov3",
+      "A": "A2",
+      "B": "A0",
+      "desc": "次指标·同 n 配平：单提示多视角 vs 基线",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S8": {
+      "metric": "cov3",
+      "A": "A4",
+      "B": "A0",
+      "desc": "次指标·同 n 配平：H0 臂 vs 基线",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S9": {
+      "metric": "cov3",
+      "A": "A3c",
+      "B": "A0",
+      "desc": "次指标·同 n 配平：外部给定轴 vs 基线（机制上界）",
+      "verdict": "不成立",
+      "mean_diff": 1.2222222222222223,
+      "pos": 3,
+      "n": 3,
+      "exceeds": 1,
+      "threshold": 2,
+      "details": [
+        {
+          "topic": "T1",
+          "A": 2.3333333333333335,
+          "B": 0.0,
+          "diff": 2.3333333333333335,
+          "sdA": 0.5773502691896257,
+          "sdB": 0.0,
+          "floor": 0.5773502691896257,
+          "sign_ok": true,
+          "exceeds": true
+        },
+        {
+          "topic": "T2",
+          "A": 1.0,
+          "B": 0.6666666666666666,
+          "diff": 0.33333333333333337,
+          "sdA": 0.0,
+          "sdB": 1.1547005383792515,
+          "floor": 1.1547005383792515,
+          "sign_ok": true,
+          "exceeds": false
+        },
+        {
+          "topic": "T3",
+          "A": 1.6666666666666667,
+          "B": 0.6666666666666666,
+          "diff": 1.0,
+          "sdA": 1.5275252316519468,
+          "sdB": 0.5773502691896257,
+          "floor": 1.5275252316519468,
+          "sign_ok": true,
+          "exceeds": false
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S10": {
+      "metric": "cov3",
+      "A": "A3c",
+      "B": "A1",
+      "desc": "次指标·同 n 配平：外部给定轴 vs 身份臂",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S11": {
+      "metric": "cov3",
+      "A": "A3",
+      "B": "A0",
+      "desc": "负对照·同 n 配平：路径唯一题上 TSC 不应展宽",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T7",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S12": {
+      "metric": "cov250",
+      "A": "A3",
+      "B": "A1",
+      "desc": "次指标·长度配平 250 字：TSC vs 身份臂",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S13": {
+      "metric": "cov3",
+      "A": "A5",
+      "B": "A4b",
+      "desc": "★★ 主对比：skill 完整规程 vs 同轴库裸给（★ 改写+签名+代价 的净贡献 ★）★★",
+      "verdict": "不成立",
+      "mean_diff": 0.11111111111111112,
+      "pos": 1,
+      "n": 3,
+      "exceeds": 1,
+      "threshold": 2,
+      "details": [
+        {
+          "topic": "T1",
+          "A": 1.0,
+          "B": 1.3333333333333333,
+          "diff": -0.33333333333333326,
+          "sdA": 1.0,
+          "sdB": 0.5773502691896257,
+          "floor": 1.0,
+          "sign_ok": false,
+          "exceeds": false
+        },
+        {
+          "topic": "T2",
+          "A": 1.6666666666666667,
+          "B": 1.6666666666666667,
+          "diff": 0.0,
+          "sdA": 0.5773502691896257,
+          "sdB": 0.5773502691896257,
+          "floor": 0.5773502691896257,
+          "sign_ok": false,
+          "exceeds": false
+        },
+        {
+          "topic": "T3",
+          "A": 0.6666666666666666,
+          "B": 0.0,
+          "diff": 0.6666666666666666,
+          "sdA": 0.5773502691896257,
+          "sdB": 0.0,
+          "floor": 0.5773502691896257,
+          "sign_ok": true,
+          "exceeds": true
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S14": {
+      "metric": "cov3",
+      "A": "A5",
+      "B": "A3c",
+      "desc": "次指标：skill 规程 vs 外部给定任务特异轴（上界）",
+      "verdict": "不成立",
+      "mean_diff": -0.5555555555555556,
+      "pos": 1,
+      "n": 3,
+      "exceeds": 1,
+      "threshold": 2,
+      "details": [
+        {
+          "topic": "T1",
+          "A": 1.0,
+          "B": 2.3333333333333335,
+          "diff": -1.3333333333333335,
+          "sdA": 1.0,
+          "sdB": 0.5773502691896257,
+          "floor": 1.0,
+          "sign_ok": false,
+          "exceeds": false
+        },
+        {
+          "topic": "T2",
+          "A": 1.6666666666666667,
+          "B": 1.0,
+          "diff": 0.6666666666666667,
+          "sdA": 0.5773502691896257,
+          "sdB": 0.0,
+          "floor": 0.5773502691896257,
+          "sign_ok": true,
+          "exceeds": true
+        },
+        {
+          "topic": "T3",
+          "A": 0.6666666666666666,
+          "B": 1.6666666666666667,
+          "diff": -1.0,
+          "sdA": 0.5773502691896257,
+          "sdB": 1.5275252316519468,
+          "floor": 1.5275252316519468,
+          "sign_ok": false,
+          "exceeds": false
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S15": {
+      "metric": "cov3",
+      "A": "A5",
+      "B": "A0",
+      "desc": "次指标：skill 规程 vs 基线",
+      "verdict": "不成立",
+      "mean_diff": 0.6666666666666666,
+      "pos": 2,
+      "n": 3,
+      "exceeds": 0,
+      "threshold": 2,
+      "details": [
+        {
+          "topic": "T1",
+          "A": 1.0,
+          "B": 0.0,
+          "diff": 1.0,
+          "sdA": 1.0,
+          "sdB": 0.0,
+          "floor": 1.0,
+          "sign_ok": true,
+          "exceeds": false
+        },
+        {
+          "topic": "T2",
+          "A": 1.6666666666666667,
+          "B": 0.6666666666666666,
+          "diff": 1.0,
+          "sdA": 0.5773502691896257,
+          "sdB": 1.1547005383792515,
+          "floor": 1.1547005383792515,
+          "sign_ok": true,
+          "exceeds": false
+        },
+        {
+          "topic": "T3",
+          "A": 0.6666666666666666,
+          "B": 0.6666666666666666,
+          "diff": 0.0,
+          "sdA": 0.5773502691896257,
+          "sdB": 0.5773502691896257,
+          "floor": 0.5773502691896257,
+          "sign_ok": false,
+          "exceeds": false
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S16": {
+      "metric": "cov3",
+      "A": "A4b",
+      "B": "A0",
+      "desc": "次指标：同轴库裸给 vs 基线（★ 检验【轴库规模】本身的贡献 ★）",
+      "verdict": "不成立",
+      "mean_diff": 0.5555555555555555,
+      "pos": 2,
+      "n": 3,
+      "exceeds": 1,
+      "threshold": 2,
+      "details": [
+        {
+          "topic": "T1",
+          "A": 1.3333333333333333,
+          "B": 0.0,
+          "diff": 1.3333333333333333,
+          "sdA": 0.5773502691896257,
+          "sdB": 0.0,
+          "floor": 0.5773502691896257,
+          "sign_ok": true,
+          "exceeds": true
+        },
+        {
+          "topic": "T2",
+          "A": 1.6666666666666667,
+          "B": 0.6666666666666666,
+          "diff": 1.0,
+          "sdA": 0.5773502691896257,
+          "sdB": 1.1547005383792515,
+          "floor": 1.1547005383792515,
+          "sign_ok": true,
+          "exceeds": false
+        },
+        {
+          "topic": "T3",
+          "A": 0.0,
+          "B": 0.6666666666666666,
+          "diff": -0.6666666666666666,
+          "sdA": 0.0,
+          "sdB": 0.5773502691896257,
+          "floor": 0.5773502691896257,
+          "sign_ok": false,
+          "exceeds": false
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S17": {
+      "metric": "cov3",
+      "A": "A5",
+      "B": "A4",
+      "desc": "次指标：skill 规程 vs 6 条任务无关维度臂",
+      "verdict": "无数据",
+      "details": [
+        {
+          "topic": "T1",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T2",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T3",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T4",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T5",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        },
+        {
+          "topic": "T6",
+          "diff": null,
+          "note": "无读数（该臂此指标不适用）"
+        }
+      ]
+    },
+    "S18": {
+      "metric": "cov3",
+      "A": "A5",
+      "B": "A0",
+      "desc": "★★ 负对照：路径唯一题上 skill 不应展宽（★ 证伪 ⇒ 装置无效 ★）★★",
+      "verdict": "成立",
+      "mean_diff": 1.0,
+      "pos": 1,
+      "n": 1,
+      "exceeds": 1,
+      "threshold": 1,
+      "details": [
+        {
+          "topic": "T7",
+          "A": 1.0,
+          "B": 0.0,
+          "diff": 1.0,
+          "sdA": 0.0,
+          "sdB": 0.0,
+          "floor": 0.0,
+          "sign_ok": true,
+          "exceeds": true
+        }
+      ]
+    },
+    "S19": {
+      "metric": "cov3",
+      "A": "A4b",
+      "B": "A0",
+      "desc": "负对照：同轴库裸给在路径唯一题上也不应展宽",
+      "verdict": "不成立",
+      "mean_diff": 0.3333333333333333,
+      "pos": 1,
+      "n": 1,
+      "exceeds": 0,
+      "threshold": 1,
+      "details": [
+        {
+          "topic": "T7",
+          "A": 0.3333333333333333,
+          "B": 0.0,
+          "diff": 0.3333333333333333,
+          "sdA": 0.5773502691896257,
+          "sdB": 0.0,
+          "floor": 0.5773502691896257,
+          "sign_ok": true,
+          "exceeds": false
+        }
+      ]
+    }
+  }
+}

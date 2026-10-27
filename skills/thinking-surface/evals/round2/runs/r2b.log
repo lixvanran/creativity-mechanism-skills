@@ -1,0 +1,5 @@
+plan: {'MAP': 9, 'GEN': 126, 'AUD': 0, 'SKL': 0}
+[MAP] done 9/9 in 35s
+  [GEN] 20/126  53s
+  [GEN] 40/126  95s
+  [GEN] 60/126  139s

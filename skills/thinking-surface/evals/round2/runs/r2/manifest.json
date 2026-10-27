@@ -1,0 +1,27 @@
+{
+  "arms": [
+    "A0",
+    "A3c",
+    "A4b",
+    "A5"
+  ],
+  "reps": 3,
+  "topics": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T6",
+    "T7"
+  ],
+  "model_gen": "MiniMax-M2.7",
+  "model_judge": "MiniMax-M2.7",
+  "expected": {
+    "MAP": 21,
+    "GEN": 282,
+    "AUD": 0,
+    "SKL": 0
+  },
+  "created": 1793116206.7681782
+}
